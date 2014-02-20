@@ -17,6 +17,14 @@
             var pushNotification;
             
             function onDeviceReady() {
+				var element = document.getElementById('deviceProperties');
+
+        element.innerHTML = 'Nombre del dispositivo: '  + device.name     + '<br />' + 
+                            'Versión Phonegap: '       + device.phonegap + '<br />' + 
+                            'Plataforma: '          + device.platform + '<br />' + 
+                            'UUID: '            + device.uuid     + '<br />' + 
+                            'Versión: '            + device.version  + '<br />';
+							
                 $("#app-status-ul").append('<li>deviceready event received</li>');
                 
 				document.addEventListener("backbutton", function(e)
@@ -139,6 +147,7 @@
 
          </script>
 		<div id="home">
+<p id="deviceProperties">Cargando atributos Device...</p>
 			<div id="app-status-div">
 				<ul id="app-status-ul">
 					<li>Cordova PushNotification Plugin Demo</li>
