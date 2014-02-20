@@ -3,6 +3,7 @@
     <head>
         <title>com.PhoneGap.c2dm</title>
     </head>
+    <meta charset="iso-8859-1">
     <body>
         
         <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
@@ -12,6 +13,7 @@
         <script type="text/javascript" src="PushNotification.js"></script>
         
         <script type="text/javascript">
+		document.addEventListener("deviceready", onDeviceReady, false);
             var pushNotification;
             
             function onDeviceReady() {
