@@ -22,7 +22,6 @@
 
 
 <permission android:name="$PACKAGE_NAME.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-<uses-permission android:name="$PACKAGE_NAME.permission.C2D_MESSAGE" />
 
 <preference name="android-minSdkVersion" value="9" />
 
