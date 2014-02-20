@@ -21,8 +21,6 @@
 <gap:plugin name="com.phonegap.plugins.pushplugin" />
 
 
-<permission android:name="$PACKAGE_NAME.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-
 <preference name="android-minSdkVersion" value="9" />
 
 <name>Push notifications</name>
